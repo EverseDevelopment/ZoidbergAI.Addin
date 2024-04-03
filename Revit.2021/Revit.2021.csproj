@@ -73,6 +73,12 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Resources\Resources.csproj">
+      <Project>{30a9978c-5a59-4bd1-850f-efd375d0ee9b}</Project>
+      <Name>Resources</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="..\Common\Common.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
@@ -80,12 +86,13 @@
 if $(ConfigurationName) == Debug mkdir "$(AppData)\Autodesk\ApplicationPlugins\ZoidbergAI.bundle\Contents\"
 if $(ConfigurationName) == Debug mkdir "$(AppData)\Autodesk\ApplicationPlugins\ZoidbergAI.bundle\Contents\2021\"
 if $(ConfigurationName) == Debug mkdir "$(AppData)\Autodesk\ApplicationPlugins\ZoidbergAI.bundle\Contents\Images\"
+if $(ConfigurationName) == Debug mkdir "$(AppData)\Autodesk\ApplicationPlugins\ZoidbergAI.bundle\Contents\Images\Icons\"
 
 if $(ConfigurationName) == Debug copy "$(SolutionDir)Common\PackageContents.xml" "$(AppData)\Autodesk\ApplicationPlugins\ZoidbergAI.bundle\"
 
 if $(ConfigurationName) == Debug copy "$(SolutionDir)Revit.2021\bin\Debug\*" "$(AppData)\Autodesk\ApplicationPlugins\ZoidbergAI.bundle\Contents\2021\"
 
-if $(ConfigurationName) == Debug copy "$(SolutionDir)Common\Images\*" "$(AppData)\Autodesk\ApplicationPlugins\ZoidbergAI.bundle\Contents\Images\"
+if $(ConfigurationName) == Debug copy "$(SolutionDir)Resources\Images\Icons\*" "$(AppData)\Autodesk\ApplicationPlugins\ZoidbergAI.bundle\Contents\Images\Icons\"
 
 </PostBuildEvent>
   </PropertyGroup>

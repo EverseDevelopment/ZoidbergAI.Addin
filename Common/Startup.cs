@@ -5,6 +5,7 @@ using System.Reflection;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
 using Common.Application;
+using Resources;
 using Common.UI;
 
 namespace Common
@@ -63,15 +64,15 @@ namespace Common
         {
             // Create the tab
             CreateRibbonTab.Run(application);
+            Assembly assembly = Assembly.GetExecutingAssembly();
+            string executingAssemblyPath = assembly.Location;
 
-            #region Example code to create buttons and panels, you can use it as reference an remove it!
-            //PushButtonData pbd = new PushButtonData("Sample", "Click Me", executingAssemblyPath, "SampleRevitAddin.Common.SampleRevitPopup");
-            //RibbonPanel panel = application.CreateRibbonPanel(eTabName, "Revit Snack");
-            //// Create the main button.
-            //PushButton pb = panel.AddItem(pbd) as PushButton;
-            //pb.ToolTip = "This is a sample Revit button";
-            //pb.LargeImage = ResourceImage.GetIcon("e-verselogo.png");
-            #endregion
+            PushButtonData pbd = new PushButtonData("BIM Assistant", "Run the AI BIM assistant.", executingAssemblyPath, "Common.Commands.RunZoidberg");
+            RibbonPanel panel = application.CreateRibbonPanel(AppConstants.AddInTabName, "AI Assistant");
+            // Create the main button.
+            PushButton pb = panel.AddItem(pbd) as PushButton;
+            pb.ToolTip = "Run the AI BIM assistant.";
+            pb.LargeImage = ResourceImage.GetIcon("generic_play.png");
         }
     }
 }
