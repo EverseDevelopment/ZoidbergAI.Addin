@@ -82,7 +82,18 @@
   <Import Project="..\Common\Common.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>
-    </PostBuildEvent>
+    <PostBuildEvent>if $(ConfigurationName) == Debug mkdir "$(AppData)\Autodesk\ApplicationPlugins\ZoidbergAI.bundle\"
+if $(ConfigurationName) == Debug mkdir "$(AppData)\Autodesk\ApplicationPlugins\ZoidbergAI.bundle\Contents\"
+if $(ConfigurationName) == Debug mkdir "$(AppData)\Autodesk\ApplicationPlugins\ZoidbergAI.bundle\Contents\2023\"
+if $(ConfigurationName) == Debug mkdir "$(AppData)\Autodesk\ApplicationPlugins\ZoidbergAI.bundle\Contents\Images\"
+if $(ConfigurationName) == Debug mkdir "$(AppData)\Autodesk\ApplicationPlugins\ZoidbergAI.bundle\Contents\Images\Icons\"
+
+if $(ConfigurationName) == Debug copy "$(SolutionDir)Common\PackageContents.xml" "$(AppData)\Autodesk\ApplicationPlugins\ZoidbergAI.bundle\"
+
+if $(ConfigurationName) == Debug copy "$(SolutionDir)Revit.2023\bin\Debug\*" "$(AppData)\Autodesk\ApplicationPlugins\ZoidbergAI.bundle\Contents\2023\"
+
+if $(ConfigurationName) == Debug copy "$(SolutionDir)Resources\Images\Icons\*" "$(AppData)\Autodesk\ApplicationPlugins\ZoidbergAI.bundle\Contents\Images\Icons\"
+
+</PostBuildEvent>
   </PropertyGroup>
 </Project>

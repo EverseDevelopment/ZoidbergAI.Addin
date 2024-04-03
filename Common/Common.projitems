@@ -36,7 +36,6 @@
     <None Include="$(MSBuildThisFileDirectory)ZoidbergAI.addin">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="$(MSBuildThisFileDirectory)PostBuildEvents.bat" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="$(MSBuildThisFileDirectory)UI\Resources\ResourceDict.xaml">
