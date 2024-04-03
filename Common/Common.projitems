@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>72885874-317a-4f92-9412-10d8bcf74652</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Common</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Application\AppConstants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Application\ApplicationContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Application\CommonExternalCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Application\IRibbonInjector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Base\GenericRibbonInjector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Constants\UIConstants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Startup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MEP\MepCategoriesDictionary.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RevitElementsHelpers\AssemblyInstanceHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RevitElementsHelpers\BoundingBoxXyzHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RevitElementsHelpers\ConduitHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RevitElementsHelpers\CurveHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RevitElementsHelpers\ElementHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RevitElementsHelpers\FaceHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RevitElementsHelpers\FamilyHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RevitElementsHelpers\GroupHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RevitElementsHelpers\LineHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RevitElementsHelpers\LocationExtension.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RevitElementsHelpers\MeshHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RevitElementsHelpers\ParameterHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RevitElementsHelpers\PlaneHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RevitElementsHelpers\SolidHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RevitElementsHelpers\ViewHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RevitElementsHelpers\ViewportHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RevitElementsHelpers\XyzHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MEP\ElectricalCategories.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shared\RevitCore.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI\Base\NotifyPropertyBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI\Base\PushButtonBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI\Base\ViewModelBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI\Base\WindowBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI\CreateRibbonTab.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI\Resources\ResourceDict.xaml.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI\Resources\ResourceDictUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\AppLogger.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\AppSettingsUtilities.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\ColorUtilities.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\DirectoryUtilities.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\FileUtilities.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\InternetUtilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)ZoidbergAI.addin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)PostBuildEvents.bat" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)UI\Resources\ResourceDict.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Images\generic_play.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)PackageContents.xml" />
+  </ItemGroup>
+</Project>

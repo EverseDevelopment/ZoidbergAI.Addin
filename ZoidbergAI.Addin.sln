@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Revit.2021", "Revit.2021\Revit.2021.csproj", "{9190328C-65BB-4814-9E29-BBAF045EF80A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Revit.2022", "Revit.2022\Revit.2022.csproj", "{54CF3268-CE0A-4A99-BD09-C43D19D41221}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Revit.2023", "Revit.2023\Revit.2023.csproj", "{68B05ADC-217F-4408-B3A5-54107F623FCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Revit.2024", "Revit.2024\Revit.2024.csproj", "{717801A5-982A-449E-A06F-60A65FD80D7F}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Common", "Common\Common.shproj", "{72885874-317A-4F92-9412-10D8BCF74652}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Installer", "Installer\Installer.csproj", "{BE01F23F-CD21-4FE5-ACCD-BE8F288B2EA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9190328C-65BB-4814-9E29-BBAF045EF80A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9190328C-65BB-4814-9E29-BBAF045EF80A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9190328C-65BB-4814-9E29-BBAF045EF80A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9190328C-65BB-4814-9E29-BBAF045EF80A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54CF3268-CE0A-4A99-BD09-C43D19D41221}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54CF3268-CE0A-4A99-BD09-C43D19D41221}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54CF3268-CE0A-4A99-BD09-C43D19D41221}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54CF3268-CE0A-4A99-BD09-C43D19D41221}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68B05ADC-217F-4408-B3A5-54107F623FCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68B05ADC-217F-4408-B3A5-54107F623FCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68B05ADC-217F-4408-B3A5-54107F623FCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68B05ADC-217F-4408-B3A5-54107F623FCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{717801A5-982A-449E-A06F-60A65FD80D7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{717801A5-982A-449E-A06F-60A65FD80D7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{717801A5-982A-449E-A06F-60A65FD80D7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{717801A5-982A-449E-A06F-60A65FD80D7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE01F23F-CD21-4FE5-ACCD-BE8F288B2EA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE01F23F-CD21-4FE5-ACCD-BE8F288B2EA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE01F23F-CD21-4FE5-ACCD-BE8F288B2EA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE01F23F-CD21-4FE5-ACCD-BE8F288B2EA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {64F12E1E-B4B8-4617-86FB-4FBDF5593B2E}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Common\Common.projitems*{54cf3268-ce0a-4a99-bd09-c43d19d41221}*SharedItemsImports = 4
+		Common\Common.projitems*{68b05adc-217f-4408-b3a5-54107f623fcf}*SharedItemsImports = 4
+		Common\Common.projitems*{717801a5-982a-449e-a06f-60a65fd80d7f}*SharedItemsImports = 4
+		Common\Common.projitems*{72885874-317a-4f92-9412-10d8bcf74652}*SharedItemsImports = 13
+		Common\Common.projitems*{9190328c-65bb-4814-9e29-bbaf045ef80a}*SharedItemsImports = 4
+	EndGlobalSection
+EndGlobal

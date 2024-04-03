@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+    <AddIn Type="Application">
+        <Name>ZoidbergAI.Addin</Name>
+        <FullClassName>Common.ExternalApplication</FullClassName>
+        <Text>ZoidbergAI Add-in</Text>
+        <VisibilityMode>AlwaysVisible</VisibilityMode>
+        <Assembly>ZoidbergAI.Addin.dll</Assembly>
+        <AddInId>ec8fa826-830a-4915-8100-1f3fd0b51011</AddInId>
+        <VendorId>e-verse</VendorId>
+        <VendorDescription>e-verse LLC, www.e-verse.com</VendorDescription>
+    </AddIn>
+</RevitAddIns>
+
