@@ -1,0 +1,82 @@
+﻿<Page x:Class="Common.UI.Views.PromptWindow"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+      TextElement.FontWeight="Regular"
+      TextElement.FontSize="13"
+      TextOptions.TextFormattingMode="Ideal"
+      TextOptions.TextRenderingMode="Auto"
+      Background="{DynamicResource MaterialDesignPaper}"
+      FontFamily="{DynamicResource MaterialDesignFont}"
+      mc:Ignorable="d"
+      Title="Ask Zoidberg"
+      Width="Auto"
+      Height="Auto">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <materialDesign:BundledTheme BaseTheme="Light"
+                                             PrimaryColor="LightBlue"
+                                             SecondaryColor="Lime" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Button.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Card.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.CheckBox.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Flipper.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Popupbox.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+    <Grid MinWidth="350"
+          HorizontalAlignment="Stretch"
+          VerticalAlignment="Stretch">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.15*"
+                           MinHeight="130" />
+        </Grid.RowDefinitions>
+
+        <StackPanel x:Name="TopStack"
+                    Margin="10,10,10,10"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Center"
+                    Grid.Row="0"
+                    Grid.ColumnSpan="2">
+            <TextBlock Text="Ask Zoidberg"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Left"
+                       Margin="5,5,5,5" />
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Center"
+                        Margin="5,5,5,5"
+                        Width="300">
+                <TextBox Padding="5"
+                         x:Name="PromptBox"
+                         Width="240"
+                         Height="30"
+                         Margin="0,0,10,0"
+                         IsEnabled="True"
+                         SelectionOpacity="-2"
+                         Style="{StaticResource MaterialDesignTextBox}">
+                </TextBox>
+                <Button x:Name="SearchButton"
+                        ToolTip="Click to search products."
+                        Width="50"
+                        Height="30"
+                        Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                        Content="{materialDesign:PackIcon Send}"
+                        IsEnabled="False"
+                        Click="SendPrompt_Click" />
+            </StackPanel>
+
+        </StackPanel>
+        <Border Grid.Row="1"
+                Grid.ColumnSpan="2" />
+    </Grid>
+</Page>

@@ -25,6 +25,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)UI\CreateRibbonTab.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)UI\Resources\ResourceDict.xaml.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)UI\Resources\ResourceDictUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UI\Views\PromptWindow.xaml.cs">
+      <DependentUpon>PromptWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Utils\AppLogger.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils\AppSettingsUtilities.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utils\ColorUtilities.cs" />
@@ -42,8 +45,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="$(MSBuildThisFileDirectory)UI\Views\PromptWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)PackageContents.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)UI\Models\" />
+    <Folder Include="$(MSBuildThisFileDirectory)UI\ViewModels\" />
   </ItemGroup>
 </Project>

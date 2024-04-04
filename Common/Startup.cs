@@ -72,7 +72,7 @@ namespace Common
             // Create the main button.
             PushButton pb = panel.AddItem(pbd) as PushButton;
             pb.ToolTip = "Run the AI BIM assistant.";
-            pb.LargeImage = ResourceImage.GetIcon("generic_play.png");
+            pb.LargeImage = ResourceImage.GetIcon("zoidberg-small.png");
         }
     }
 }
