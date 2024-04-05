@@ -39,33 +39,73 @@
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
     </Reference>
+    <Reference Include="IronPython, Version=3.4.1.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\IronPython.3.4.1\lib\net462\IronPython.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython.Modules, Version=3.4.1.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\IronPython.3.4.1\lib\net462\IronPython.Modules.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython.SQLite, Version=3.4.1.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\IronPython.3.4.1\lib\net462\IronPython.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython.Wpf, Version=3.4.1.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\IronPython.3.4.1\lib\net462\IronPython.Wpf.dll</HintPath>
+    </Reference>
     <Reference Include="MaterialDesignColors, Version=2.0.3.2, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
       <HintPath>..\packages\MaterialDesignColors.2.0.3\lib\net452\MaterialDesignColors.dll</HintPath>
     </Reference>
     <Reference Include="MaterialDesignThemes.Wpf, Version=4.2.1.2, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
       <HintPath>..\packages\MaterialDesignThemes.4.2.1\lib\net452\MaterialDesignThemes.Wpf.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Dynamic, Version=1.3.4.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\DynamicLanguageRuntime.1.3.4\lib\net452\Microsoft.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Scripting, Version=1.3.4.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\DynamicLanguageRuntime.1.3.4\lib\net452\Microsoft.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Scripting.Metadata, Version=1.3.4.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\DynamicLanguageRuntime.1.3.4\lib\net452\Microsoft.Scripting.Metadata.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Xaml.Behaviors, Version=1.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Xaml.Behaviors.Wpf.1.1.39\lib\net45\Microsoft.Xaml.Behaviors.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="Python.Runtime, Version=3.0.3.0, Culture=neutral, PublicKeyToken=5000fea6cba702dd, processorArchitecture=MSIL">
+      <HintPath>..\packages\pythonnet.3.0.3\lib\netstandard2.0\Python.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="RevitAPI, Version=21.0.0.0, Culture=neutral, processorArchitecture=AMD64">
       <HintPath>..\packages\Revit_All_Main_Versions_API_x64.2021.1.4\lib\net48\RevitAPI.dll</HintPath>
       <SpecificVersion>False</SpecificVersion>
-      <Private>False</Private>
+      <Private>True</Private>
     </Reference>
     <Reference Include="RevitAPIUI, Version=21.0.0.0, Culture=neutral, processorArchitecture=AMD64">
       <HintPath>..\packages\Revit_All_Main_Versions_API_x64.2021.1.4\lib\net48\RevitAPIUI.dll</HintPath>
       <SpecificVersion>False</SpecificVersion>
-      <Private>False</Private>
+      <Private>True</Private>
     </Reference>
     <Reference Include="ShowMeTheXAML, Version=2.0.0.62, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ShowMeTheXAML.2.0.0\lib\net472\ShowMeTheXAML.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
@@ -93,6 +133,53 @@
       <Name>Resources</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Lib\rpw\base.py" />
+    <Content Include="Lib\rpw\db\assembly.py" />
+    <Content Include="Lib\rpw\db\bounding_box.py" />
+    <Content Include="Lib\rpw\db\builtins.py" />
+    <Content Include="Lib\rpw\db\category.py" />
+    <Content Include="Lib\rpw\db\collection.py" />
+    <Content Include="Lib\rpw\db\collector.py" />
+    <Content Include="Lib\rpw\db\curve.py" />
+    <Content Include="Lib\rpw\db\element.py" />
+    <Content Include="Lib\rpw\db\family.py" />
+    <Content Include="Lib\rpw\db\parameter.py" />
+    <Content Include="Lib\rpw\db\pattern.py" />
+    <Content Include="Lib\rpw\db\reference.py" />
+    <Content Include="Lib\rpw\db\spatial_element.py" />
+    <Content Include="Lib\rpw\db\transaction.py" />
+    <Content Include="Lib\rpw\db\transform.py" />
+    <Content Include="Lib\rpw\db\view.py" />
+    <Content Include="Lib\rpw\db\wall.py" />
+    <Content Include="Lib\rpw\db\xyz.py" />
+    <Content Include="Lib\rpw\db\__init__.py" />
+    <Content Include="Lib\rpw\exceptions.py" />
+    <Content Include="Lib\rpw\extras\bin\Rhino3dmIO.dll" />
+    <Content Include="Lib\rpw\extras\bin\rhino3dmio_native.dll" />
+    <Content Include="Lib\rpw\extras\rhino.py" />
+    <Content Include="Lib\rpw\extras\__init__.py" />
+    <Content Include="Lib\rpw\ui\document.py" />
+    <Content Include="Lib\rpw\ui\forms\console.py" />
+    <Content Include="Lib\rpw\ui\forms\flexform.py" />
+    <Content Include="Lib\rpw\ui\forms\os_dialog.py" />
+    <Content Include="Lib\rpw\ui\forms\quickform.py" />
+    <Content Include="Lib\rpw\ui\forms\resources.py" />
+    <Content Include="Lib\rpw\ui\forms\taskdialog.py" />
+    <Content Include="Lib\rpw\ui\forms\__init__.py" />
+    <Content Include="Lib\rpw\ui\selection.py" />
+    <Content Include="Lib\rpw\ui\__init__.py" />
+    <Content Include="Lib\rpw\utils\coerce.py" />
+    <Content Include="Lib\rpw\utils\dotnet.py" />
+    <Content Include="Lib\rpw\utils\logger.py" />
+    <Content Include="Lib\rpw\utils\mixins.py" />
+    <Content Include="Lib\rpw\utils\rlcompleter.py" />
+    <Content Include="Lib\rpw\utils\sphinx_compat.py" />
+    <Content Include="Lib\rpw\utils\__init__.py" />
+    <Content Include="Lib\rpw\__init__.py" />
+    <Content Include="Lib\rpw\__main__.py" />
+    <Content Include="Lib\rpw\__revit.py" />
+  </ItemGroup>
   <Import Project="..\Common\Common.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
@@ -108,6 +195,12 @@ if $(ConfigurationName) == Debug copy "$(SolutionDir)Revit.2021\bin\Debug\*" "$(
 
 if $(ConfigurationName) == Debug copy "$(SolutionDir)Resources\Images\Icons\*" "$(AppData)\Autodesk\ApplicationPlugins\ZoidbergAI.bundle\Contents\Images\Icons\"
 
+
+if $(ConfigurationName) == Debug mkdir "$(AppData)\Autodesk\ApplicationPlugins\ZoidbergAI.bundle\Contents\2021\Utils\rpw\"
+
+
+
+if $(ConfigurationName) == Debug xcopy /s /i /y "$(ProjectDir)lib\rpw\*.*" "$(AppData)\Autodesk\ApplicationPlugins\ZoidbergAI.bundle\Contents\2021\Utils\rpw\"
 </PostBuildEvent>
   </PropertyGroup>
   <Import Project="..\packages\MaterialDesignThemes.4.2.1\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.4.2.1\build\MaterialDesignThemes.targets')" />

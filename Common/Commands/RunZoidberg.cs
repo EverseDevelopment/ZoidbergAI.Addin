@@ -4,6 +4,9 @@ using Autodesk.Revit.UI;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Common.Application;
+using Common.UI.Views;
+using MaterialDesignThemes.Wpf;
 
 namespace Common.Commands
 {
@@ -15,14 +18,18 @@ namespace Common.Commands
         {
             try
             {
-                TaskDialog.Show("e-verse Sample Addin", "Looks like this worked!");
+                UIApplication uiApp = commandData.Application;
+                Document document = commandData.Application.ActiveUIDocument.Document;
+                PromptWindow promptWindow = new PromptWindow(uiApp, document);
+                promptWindow.ShowDialog();
                 return Result.Succeeded;
             }
             catch (Exception e)
             {
-                TaskDialog.Show("e-verse Sample Addin", $"Exception found: {e.Message}");
+                TaskDialog.Show("Zoidberg AI", $"There was an error: {e.Message}");
                 return Result.Failed;
             }
+            
         }
     }
 
