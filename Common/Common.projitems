@@ -14,6 +14,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Application\CommonExternalCommand.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Application\IRibbonInjector.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Base\GenericRibbonInjector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Commands\CodeExecutionHandler.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Commands\RunZoidberg.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Constants\UIConstants.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Startup.cs" />
