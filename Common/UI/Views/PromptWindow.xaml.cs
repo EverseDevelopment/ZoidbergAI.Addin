@@ -32,7 +32,7 @@ namespace Common.UI.Views
             
         }
 
-        private void ExecutePythonCode(UIApplication uiApp, Document doc, int maxRetries = 3)
+        private void ExecutePythonCode(UIApplication uiApp, Document doc, int maxRetries = 10)
         {
             // Create an ExternalEventHandler instance
             var handler = new CodeExecutionHandler(uiApp, doc, maxRetries, CurrentPrompt);

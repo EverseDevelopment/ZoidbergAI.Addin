@@ -69,14 +69,14 @@ namespace Common.Commands
                     {
                         try
                         {
-                            using (Transaction t = new Transaction(_doc, "Automatic Zoidberg Action"))
-                            {
-                                t.Start();
+                            //using (Transaction t = new Transaction(_doc, "Automatic Zoidberg Action"))
+                            //{
+                            //    t.Start();
                                 scope.Exec(_code);
-                                t.Commit();
+                                //t.Commit();
                                 scope.Dispose();
                                 break; // If the code executes successfully, exit the loop
-                            }
+                            //}
                         }
                         catch (Exception ex)
                         {
