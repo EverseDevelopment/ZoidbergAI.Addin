@@ -34,7 +34,7 @@ namespace Common.Application
         }
 
         /// <summary>
-        /// Inyect data to Context
+        /// Inject data to Context
         /// </summary>
         protected virtual void InyectCommandDataToEVerseContext(ExternalCommandData data)
         {

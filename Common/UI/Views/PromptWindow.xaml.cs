@@ -4,6 +4,7 @@ using MaterialDesignColors;
 using MaterialDesignThemes.Wpf;
 using System.Windows;
 using Common.Commands;
+using Common.Handlers;
 
 namespace Common.UI.Views
 {
