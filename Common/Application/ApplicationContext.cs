@@ -1,5 +1,6 @@
 ﻿using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
+using System.Reflection;
 
 namespace Common.Application
 {
@@ -27,7 +28,7 @@ namespace Common.Application
 
         #endregion
 
-        public string AppFormsTitle = "Title of your Addin here.";
+        public string AppFormsTitle = "Zoidberg AI";
 
         /// <summary>
         /// Current Command Data
@@ -62,3 +63,4 @@ namespace Common.Application
         }
     }
 }
+

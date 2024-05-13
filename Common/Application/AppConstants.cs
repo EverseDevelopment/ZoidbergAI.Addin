@@ -4,12 +4,12 @@ namespace Common.Application
 {
     public static class AppConstants
     {
-        public const string AddInTabName = "e-verse";  // configure your tab name here!
-        public const string AddInToolName = "";
+        public const string AddInTabName = "Zoidberg AI"; 
+        public const string AddInToolName = "Zoidberg AI";
         public const string AddInEnvironment = "development";
         public const string AddInPackageProperty = "";
         public const string AddInAppVersion = "";
-        public const string AddInWindowsTitle = "";
+        public const string AddInWindowsTitle = "Zoidberg AI";
 
         public const string SoftwareName = "Autodesk Revit";
 

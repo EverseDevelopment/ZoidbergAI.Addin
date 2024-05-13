@@ -2,7 +2,7 @@
 <RevitAddIns>
     <AddIn Type="Application">
         <Name>ZoidbergAI.Addin</Name>
-        <FullClassName>Common.ExternalApplication</FullClassName>
+        <FullClassName>Common.Startup</FullClassName>
         <Text>ZoidbergAI Add-in</Text>
         <VisibilityMode>AlwaysVisible</VisibilityMode>
         <Assembly>ZoidbergAI.Addin.dll</Assembly>
